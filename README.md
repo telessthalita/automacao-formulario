@@ -41,10 +41,4 @@ Este projeto demonstra como automatizar o preenchimento de um formulário de pr�
 - **Exemplo de Uso:**
 - Este script abre o navegador Microsoft Edge, navega até o formulário de prática de automação no site demoqa.com, preenche os campos especificados e fecha o navegador ao final.
 
-## Contribuições
 
-Contribuições são bem-vindas! Para alterações significativas, por favor, abra primeiro uma issue para discutir o que você gostaria de mudar.
-
-## Licença
-
-Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
