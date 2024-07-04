@@ -1,43 +1,50 @@
-# Documentação - Automatização de Preenchimento de Formulário Web com Python e Selenium
+# Automação de Formulário com Selenium
 
-## Visão Geral
-Este projeto demonstra como automatizar o preenchimento de um formulário web usando Python e Selenium. A automação é útil para tarefas repetitivas de entrada de dados em formulários online, economizando tempo e minimizando erros manuais.
-
-### Funcionalidades Principais
-- Abre um navegador web.
-- Acessa um formulário web específico usando a URL fornecida.
-- Preenche campos do formulário com dados fictícios.
-- Submete o formulário (se houver um botão de envio).
-- Fecha o navegador após a conclusão.
+Este projeto demonstra como automatizar o preenchimento de um formulário de prática de automação usando Selenium em Python.
 
 ## Pré-requisitos
-- Python 3.x instalado no seu sistema. Você pode baixar Python em [python.org](https://www.python.org/downloads/).
-- Bibliotecas Python necessárias: `selenium`, `webdriver-manager`. Instale as bibliotecas executando o seguinte comando:
-- ChromeDriver configurado corretamente. Você pode baixar o ChromeDriver em [ChromeDriver Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads) e garantir que ele esteja no seu PATH de ambiente ou configurado no código.
 
-## Instalação e Configuração
-1. **Clonar o Repositório**:
+- Python 3.x
+- Selenium
+- WebDriver para Microsoft Edge (Edge Chromium)
 
-2. **Instalar Dependências**:
+## Instalação
 
-3. **Configurar o ChromeDriver**:
-Certifique-se de que o ChromeDriver está configurado corretamente. Você pode configurá-lo no código do script ou adicioná-lo ao seu PATH de ambiente.
+1. **Instale o Python:**
+   - Baixe e instale o Python 3.x a partir de [python.org](https://www.python.org).
 
-## Uso
-1. **Editar o Script**:
-- Abra o arquivo `automacao_formulario.py` no seu editor de código preferido.
-- Personalize o preenchimento dos campos do formulário editando os IDs conforme necessário. Exemplo:
-  ```python
-  campo_nome = driver.find_element_by_id("id-do-campo-de-nome")
-  campo_nome.send_keys("João da Silva")
+2. **Instale as dependências:**
+   - Abra o terminal e execute o seguinte comando para instalar as bibliotecas necessárias:
+     ```
+     pip install selenium webdriver-manager
+     ```
+
+3. **Configuração do WebDriver:**
+   - Certifique-se de ter o WebDriver do Microsoft Edge Chromium configurado. O código usa o gerenciador do WebDriver para fazer o download automaticamente durante a execução.
+
+## Como Usar
+
+1. **Clone o repositório:**
+
+2. **Execute o script:**
+- Navegue até o diretório do projeto e execute o script Python:
   ```
-
-2. **Executar o Script**:
-- Salve suas alterações e execute o script:
-  ```
+  cd automacao-formulario
   python automacao_formulario.py
   ```
 
-3. **Observações**:
-- O script abrirá um navegador, preencherá o formulário com os dados fictícios configurados e submeterá o formulário (se houver um botão de envio).
-- Após a conclusão, o navegador será fechado automaticamente.
+## Funcionalidades
+
+- **Preenchimento Automático:**
+- Nome, Sobrenome, Email, Gênero, Número de Telefone, Data de Nascimento.
+
+- **Exemplo de Uso:**
+- Este script abre o navegador Microsoft Edge, navega até o formulário de prática de automação no site demoqa.com, preenche os campos especificados e fecha o navegador ao final.
+
+## Contribuições
+
+Contribuições são bem-vindas! Para alterações significativas, por favor, abra primeiro uma issue para discutir o que você gostaria de mudar.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
